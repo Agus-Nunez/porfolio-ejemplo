@@ -1,0 +1,287 @@
+.footer-page{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $grey-color;
+    margin: -22px;
+
+    @include breakpoint(tablet){
+        margin: -47px;
+        padding-top: 30px;
+    }
+
+    
+    .ovalos-footer{
+        z-index: 1;
+        position: relative;
+        top: 264px;
+
+        @include breakpoint(tablet){
+            top: 393px;
+        }
+
+        @include breakpoint(desktop){
+            top: 142px;
+        }
+        
+        img:first-of-type{
+            position: absolute;
+            left: -173px;
+            top: 302px;
+
+            @include breakpoint(desktop){
+                left: -155px;
+            }
+        }
+        img:nth-of-type(2){
+            position: absolute;
+            left: -173px;
+            top: 314px;
+            @include breakpoint(desktop){
+                left: -155px;
+            }
+              
+        }
+        img:nth-of-type(3){
+            position: absolute;
+            left: -173px;
+            top: 332px;
+            @include breakpoint(desktop){
+                left: -155px;
+            }
+        }
+
+        img:nth-of-type(4){
+            position: absolute;
+            left: -173px;
+            top: 348px;
+            @include breakpoint(desktop){
+                left: -155px;
+            }
+        }
+        
+        img:last-of-type{
+            position: absolute;
+           left: -173px;
+           top: 362px;
+           @include breakpoint(desktop){
+                left: -155px;
+            }
+        }
+    }
+
+    .footer-main{
+
+        @include breakpoint(tablet){
+           padding-left: 150px;
+           padding-right: 150px;
+        }
+
+        
+      @include breakpoint(desktop){
+          display: flex;
+          flex-direction: row;
+          gap: 192px;
+          align-items: center;
+          border-bottom: 3px solid $white-color;
+          margin-left: 83px;
+          margin-right: 83px;
+        }
+
+
+        .footer-contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 45px;
+            
+           @include breakpoint(desktop){
+              width: 52%;
+              margin-top: -186px;
+             
+            }
+         
+
+         .footer-title{
+             font-size: 50px;
+             padding-bottom: 15px;
+
+              @include breakpoint(desktop){
+                  font-size: 88px;
+                  font-weight: 700;
+                  margin-left: -115px;
+                  margin-bottom: 20px;
+                }
+            }
+
+           .footer-parrafo{
+              display: flex;
+              font-size: 27px;
+              align-items: center;
+              padding-bottom: 20px;
+              width: 89%;
+              text-align: center;
+
+              @include breakpoint(tablet){
+                 width: 667.984px;
+                }
+
+              @include breakpoint(desktop){
+                  font-size: 22px;
+                  font-weight: 300;
+                  width: 533.25px;
+                   margin-left: 64px;
+                  text-align: left;
+                  line-height: 30px;
+                }
+            }
+        }
+
+        .footer-from{
+          display: flex;
+          flex-direction: column;
+           @include breakpoint(desktop){
+                margin-top: 110px;
+                width: 50%;
+            }
+          
+          input, textarea{
+              border:transparent;
+              border-bottom: 3px solid $white-color;
+              background-color:transparent;
+              text-transform: uppercase;
+              color:#8f8b8b;
+              margin-bottom: 25px;
+              font-size: 30px;
+              padding-left: 37px;
+              padding-bottom: 20px;
+
+              @include breakpoint(desktop){
+                 margin-bottom: 30px;
+                 padding-bottom: 20px;
+                }
+            }
+
+          label {
+              color: #b9b5b5;
+              font-weight: 600;
+              font-size: 30px;
+              text-transform: uppercase;
+              padding-left: 40px;
+
+            }
+
+          .footer-btn{
+              display: flex;
+              justify-content: end;
+              align-items: end;
+              font-size: 25px;
+              letter-spacing: 3px;
+              background-color: transparent;
+              border: transparent;
+              color: $white-color;
+              position: relative;
+              text-transform: uppercase;
+               font-weight: 600;
+              margin-top: 20px;
+              padding-right: 30px;
+              border-bottom: 3px solid white;
+              padding-bottom: 125px;
+
+              @include breakpoint(tablet){
+                  padding-bottom: 142px;
+                }
+
+                @include breakpoint(desktop){
+                   display: flex;
+                   justify-content: end;
+                   margin-right: -20px;
+                   border-bottom: transparent;
+                }
+           }
+           .footer-btn:hover{
+              color:$green-color
+            }
+
+           .footer-btn::before{
+              content: "";
+              border: 1px solid #4EE1A0;
+              position: absolute;
+              top: 41px;
+              right: 34px;
+              width:214.718px;
+
+
+              @include breakpoint(desktop){
+                 width: 208.79px;
+                }
+            }
+        }
+    }
+
+    
+
+    
+
+    .final{
+        margin-top: 20px;
+       margin-bottom: 20px;
+       display: grid;
+       text-align: center;
+        gap: 20px;
+        font-size: 40px;
+
+        @include breakpoint(tablet){
+           display: flex;
+           justify-content: space-between;
+           padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        @include breakpoint(desktop){
+            display: flex;
+            justify-content: space-between;
+            margin-left: 83px;
+            margin-right: 93px;
+        }
+
+        .final-icons{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            a:hover{
+              color: $green-color;
+            }
+
+            a{
+                img{
+                  width: 35px;
+                  &:hover{
+                      background-color: #4EE1A0;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

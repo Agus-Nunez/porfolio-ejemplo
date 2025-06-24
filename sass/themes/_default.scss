@@ -1,0 +1,29 @@
+html * {
+    font-family: $primary-font;
+}
+ 
+body {
+    overflow-x: hidden;
+    font-family: $primary-font;
+    margin: 20px;
+    background-color: $bg-color;
+    color: $white-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+    
+
+    .page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include breakpoint(tablet){
+            margin: 13px;
+        }
+    }
+
+
+} 
